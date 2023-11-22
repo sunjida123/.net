@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "ShowAllRestaurants";
+    Layout = "~/Views/Shared/_NGOLayout.cshtml";
+}
+
+<h2>ShowAllRestaurants</h2>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Contact Person</th>
+        <th>Contact Number</th>
+        <th>Email</th>
+       
+
+    </tr>
+    @foreach (var r in Model)
+    {
+        <tr text-align: center;>
+            <td>@r.RestaurantID</td>
+            <td>@r.RestaurantName</td>
+            <td>@r.Location</td>
+            <td>@r.ContactPerson</td>
+            <td>@r.ContactNumber</td>
+            <td>@r.EmailAddress</td>
+    
+        </tr>
+    }
+</table>

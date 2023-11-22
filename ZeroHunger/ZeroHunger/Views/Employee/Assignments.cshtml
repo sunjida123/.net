@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Assignments";
+    Layout = "~/Views/Shared/_EmployeeLayout.cshtml";
+}
+
+<h2>Assignments</h2>
+<table class="table table-bordered">
+
+    <tr>
+        <th>Restaurant Name </th>
+        <th>Location</th>
+        <th>Contact Person</th>
+        <th>Contact Number</th>
+        <th>Email</th>
+    </tr>
+    @foreach (var a in Model)
+    {
+        <tr text-align: center;>
+
+            <td>@a.CollectRequest.Restaurant.RestaurantName</td>
+            <td>@a.CollectRequest.Restaurant.Location</td>
+            <td>@a.CollectRequest.Restaurant.ContactPerson</td>
+            <td>@a.CollectRequest.Restaurant.ContactNumber</td>
+            <td>@a.CollectRequest.Restaurant.EmailAddress</td>
+            <td> <a href="/employee/Distributed/@a.AssignemntID?@a.CollectRequest.RequestID" class="btn btn-primary">Distributed</a> </td>
+
+
+        </tr>
+    }
+</table>

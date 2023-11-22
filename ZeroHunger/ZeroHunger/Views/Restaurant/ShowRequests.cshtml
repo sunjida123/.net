@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "ShowRequests";
+    Layout = "~/Views/Shared/_RestaurantLayout.cshtml";
+}
+
+<h2>ShowRequests</h2>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>Request ID</th>
+        <th>Request Time</th>
+        <th>Max Preservation Time</th>
+        <th>Status</th>
+        
+       
+    </tr>
+    @foreach (var cr in Model)
+    {
+        <tr text-align: center;>
+            <td>@cr.RequestID</td>
+            <td>@cr.RequestTime</td>
+            <td>@cr.MaxPreservationTime</td>
+            <td>@cr.Status</td>
+         
+           
+           
+        </tr>
+    }
+</table>

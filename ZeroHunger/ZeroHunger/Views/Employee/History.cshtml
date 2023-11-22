@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "History";
+    Layout = "~/Views/Shared/_EmployeeLayout.cshtml";
+}
+
+<h2>History</h2>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>Restaurant Name</th>
+        <th>Location</th>
+        <th>Status </th>
+        <th>Distibuted at</th>
+    </tr>
+    @foreach (var dr in Model)
+    {
+        <tr text-align: center;>
+            <td>@dr.CollectRequest.Restaurant.RestaurantName</td>
+            <td>@dr.CollectRequest.Restaurant.Location</td>
+            <td>@dr.Status</td>
+            <td>@dr.DistributionTime</td>
+            
+
+
+        </tr>
+    }
+</table>

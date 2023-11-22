@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "DistibutionRecord";
+    Layout = "~/Views/Shared/_NGOLayout.cshtml";
+}
+
+<h2>DistibutionRecord</h2>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>Restaurant Name</th>
+        <th>Status </th>
+        <th>Distibuted by</th>
+
+    </tr>
+    @foreach (var dr in Model)
+    {
+        <tr text-align: center;>
+            <td>@dr.CollectRequest.Restaurant.RestaurantName</td>
+            <td>@dr.Status</td>
+            <td>@dr.User.Name</td>
+            
+
+
+        </tr>
+    }
+</table>

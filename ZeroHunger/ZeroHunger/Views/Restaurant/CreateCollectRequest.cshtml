@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "CreateCollectRequest";
+    Layout = "~/Views/Shared/_RestaurantLayout.cshtml";
+}
+
+<h2>CreateCollectRequest</h2>
+
+<form action="" method="post">
+  
+    <input type="hidden" name="RestaurantID" class="form-control" value="@Session["restaurantid"]" />
+    <input type="hidden" name="RequestTime" class="form-control" value="@DateTime.Now" />
+    <label>Max Preservation Time:</label>
+    <input type="datetime-local" name="MaxPreservationTime"  />
+    <input type="hidden" name="Status" class="form-control" value="Open" />
+    <input type="submit" name="submit" class="btn btn-success" value="Create" />
+</form>

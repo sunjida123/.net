@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="78d899e4c3be4119a068ac9451034333" Name="Diagram1">
+        <EntityTypeShape EntityType="NGOV2Model.Assignment" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NGOV2Model.CollectRequest" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NGOV2Model.DistributionRecord" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NGOV2Model.Restaurant" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NGOV2Model.User" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <AssociationConnector Association="NGOV2Model.FK_Assignments_CollectRequests" ManuallyRouted="false" />
+        <AssociationConnector Association="NGOV2Model.FK_Assignments_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="NGOV2Model.FK_CollectRequests_Restaurants" ManuallyRouted="false" />
+        <AssociationConnector Association="NGOV2Model.FK_DistributionRecords_CollectRequests" ManuallyRouted="false" />
+        <AssociationConnector Association="NGOV2Model.FK_DistributionRecords_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
